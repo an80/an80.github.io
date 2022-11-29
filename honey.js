@@ -1,4 +1,4 @@
-let bee = document.getElementById("bee");
+/*let bee = document.getElementById("bee");
 let bee_cord=bee.getBoundingClientRect();
 let cart = document.getElementById("cart");
 let cart_cord=cart.getBoundingClientRect();
@@ -20,7 +20,7 @@ buttons.addEventListener("click",function() {
     timer_f(timepass);
 
 });
-
+*/
 /*let start = Date.now();
 let timer = setInterval(async function(){
     draw(timepass);
@@ -29,3 +29,25 @@ let timer = setInterval(async function(){
 function draw(timepass){
     bee.style.left = timepass / 5 + 'px';
 }*/
+var a = 0;
+const imga=document.querySelectorAll(".imeg");
+const fade=document.getElementsByTagName("template")[0];
+let clone = fade.content.cloneNode(true);
+imga.forEach(img => {
+    img.addEventListener("click",function click(){
+        switch(a)
+        {
+            case 0:
+        img.style.transform="scale(1.5)";
+        a=1;
+        fade.style.display="inline"
+        document.body.appendChild(clone);
+        break
+        case 1:
+            img.style.transform="scale(1)";
+            a=0
+            break
+        }
+    }
+        );
+})
