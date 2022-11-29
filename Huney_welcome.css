@@ -1,0 +1,45 @@
+#banner{
+    width: 5vw;
+    height: 5vw;
+}
+body{
+    color:#ca8113 ;
+    background-color: #f1ca3a;
+    font-family: 'Pacifico', cursive;
+    /*background-image:url("https://i.imgur.com/GVMAEkg.png");
+    background-size: 7vw;
+    background-repeat:no-repeat ;*/
+}
+#comb{
+    background-image: url("https://i.imgur.com/Wg1f78S.png");
+    background-size: 5.5vw 6.5vw;
+    background-repeat: no-repeat;
+    height: 7vw;
+    width: 7vw;
+}
+#t_co{
+position: absolute;
+top:1.8vw;
+margin-left: 0.55vw;
+}
+img{
+    width: 7.5vw;
+    height: 8.5vw;
+}
+#grid{
+    margin-left: 1vw;
+    display: grid;
+    text-align: center;
+    grid-template-columns:[Divider]48vw 48vw;
+    grid-template-rows:[Y-Divider]48vw 48vw;
+    column-gap:1vw;
+    row-gap:1vw;
+}
+#grid_p{
+    font-size: 2vw;
+}
+.flex{
+    border: #ca8113 3px solid;
+    background-color: #f8d863;
+
+}

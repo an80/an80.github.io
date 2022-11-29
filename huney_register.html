@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Huney_register.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <!--echo htmlspecialchars($_SERVER["PHP_SELF"]);-->
+    <form method="POST" action="huney_insert.php" id="register">
+     <fieldset>
+      <h1><legend>Register</legend></h1>
+      <div class="box_1">
+        <label id="name_lab">Name</label>
+        <input type="text" name="name" id="name_in" required></input>
+      </div>
+        </br>
+        <div class="box_1">
+        <label id="pass_lab">Password</label>
+        <input type="password" name="password" required id="pass_in"></input>
+      </div>
+        </br>
+        <div class="box_1">
+        <label id="add_lab">Address</label>
+        <input type="text" name="address" id="add_in" required></input>
+      </div>
+        </br>
+        <div class="box_1">
+        <label id="e_lab">E-Mail</label>
+        <input type="email" name="email" id="e_in" required></input>
+      </div>
+        </br>
+        <div class="box_1">
+        <label id="num_lab">Number</label>
+        <input type="text" name="number" id="num_in" required></input>
+      </div>
+        </br>
+        <div class="box_1">
+        <label id="comm_lab">Comments</label>
+        <textarea name="comment" rows="10" cols="30" style="width: 178px; height: 39px;">
+        </textarea>
+      </div>
+        </br>
+        <div class="box_1">
+        <a href="login.php"><button type="submit" name="submit" id="button">Register</button></a>
+      </div>
+     </fieldset>
+        </form>
+    </body>
+</html>

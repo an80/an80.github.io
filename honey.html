@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <link rel="icon" href="index.jpg" type="image/jpg" sizes="16 x 16">
         <title>Honey</title>
-        <meta name="description" content="">
+        <meta name="description" content="магазин за мед">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="honey.css">
     </head>
     <body>
-        <h1>ПчелиБГ</h1>
+        <h1 id="anc" >ПчелиБГ</h1>
         <ul>
-            <li><a href="honey.html.html">Начало</a></li>
             <li><a href="#Produkt">Продукти</a></li>
-            <li><a href="us.html">За нас </a></li>
-            <li><a href="blog.html">Блог</a></li>
+            <li><a href="#Za nas">За нас </a></li>
+            <li><a href="#blog">Блог</a></li>
+            <li><a href="huney_register.html">Регистрация</a></li>
+            <li><a href="login.php">Вход</a></li>
         </ul>
-        <a href="#h1"><img id="up" hsrc="arrow.svg"></a>
         <br>
         <p id="Produkt" class="titles">Продукт</p>
         <div id="buy_windows" class="titles">
@@ -25,21 +25,21 @@
                 Акациев мед
             </p>
         <img src="PicsArt_10-21-0.Akacia-scaled.jpg" id="buy_img">
-        <button id="button">Купи</button>
+        <div id="button_cover"><button id="button">Купи</button></div>
         </div>
         <div id="buy_window">
             <p id="buy_text">
                 Натурален Мед
             </p>
             <img src="bio.jpg" id="buy_img" >
-            <button id="button">Купи</button>
+            <div id="button_cover"><button id="button">Купи</button></div>
         </div>
         <div id="buy_window">
             <p id="buy_text">
                 Прасковен мед
             </p>
             <img src="peach honey.jpg" id="buy_img" >
-            <button id="button">Купи</button>
+            <div id="button_cover"><button id="button">Купи</button></div>
         </div>
         </div>
         <br>
@@ -55,6 +55,9 @@
         <p>Днес Пробвах Пчела</p>
         <img src="bee_eat.jpg">
     </div>
+    <img id="bee" src="bumble-bee-drawing-cartoon-55.jpg">
+    <a href="#anc"><img id="up" src="arrow.svg"></a>
+    <a href="login.php"><img src="shopping-cart-svgrepo-com.svg" id="cart"></a>
         <script src="honey.js" async defer></script>
     </body>
 </html>
