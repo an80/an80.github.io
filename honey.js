@@ -31,8 +31,6 @@ function draw(timepass){
 }*/
 var a = 0;
 const imga=document.querySelectorAll(".imeg");
-const fade=document.getElementsByTagName("template")[0];
-let clone = fade.content.cloneNode(true);
 imga.forEach(img => {
     img.addEventListener("click",function click(){
         switch(a)
@@ -40,14 +38,59 @@ imga.forEach(img => {
             case 0:
         img.style.transform="scale(1.5)";
         a=1;
-        fade.style.display="inline"
+        img.style.zIndex="3";
         document.body.appendChild(clone);
         break
         case 1:
             img.style.transform="scale(1)";
+            img.style.zIndex="1";
             a=0
             break
         }
     }
         );
+})
+const plus=document.querySelectorAll("#plus");
+const minus = document.querySelectorAll("#minus");
+const count = document.querySelectorAll("#count")
+let bio=0;
+let aka=0;
+let peach=0;
+plus.forEach(pluses=>
+    {
+        count.forEach(numbers=>{
+            pluses.addEventListener("click",function oneup(){
+                if(but.getAttribute("name")=="bio"){
+                numbers.innerHTML=++bio;
+                }
+                if(but.getAttribute("name")=="peach"){
+                numbers.innerHTML=++aka;
+                }
+                if(but.getAttribute("name")=="aka"){
+                numbers.innerHTML=++peach;
+                }
+            }
+        )
+})
+    })
+let sub_a=false;
+let sub_b=false;
+let sub_p=false;
+const buy_but=document.querySelectorAll("#button");
+buy_but.forEach(but=>{
+    but.addEventListener("click",function clank(){
+        if(but.getAttribute("name")=="bio"){
+            sub_b=true;
+        }
+        if(but.getAttribute("name")=="peach"){
+            sub_p=true;
+        }
+        if(but.getAttribute("name")=="aka"){
+            sub_a=true;
+        }
+    })
+})
+const cart=document.getElementById("cart");
+cart.addEventListener("mouseenter",function hove(){
+    
 })

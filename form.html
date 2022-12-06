@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Huney_register.css">
+    </head>
+    <body>
+        <form method="POST" action="huney_insert.php" id="send">
+            <fieldset>
+             <h1><legend>Изпрати</legend></h1>
+             <div class="box_1">
+               <label id="name_lab">Име</label>
+               <input type="text" name="name" id="name_in" required></input>
+             </div>
+               </br>
+               </br>
+               <div class="box_1">
+               <label id="add_lab">Адрес</label>
+               <input type="text" name="address" id="add_in" required></input>
+             </div>
+               </br>
+               <div class="box_1">
+               <label id="e_lab">Имейл</label>
+               <input type="email" name="email" id="e_in" required></input>
+             </div>
+               </br>
+               <div class="box_1">
+               <label id="num_lab">Номер</label>
+               <input type="text" name="number" id="num_in" required></input>
+             </div>
+               </br>
+               <div class="box_1">
+               <label id="comm_lab">Коментар</label>
+               <textarea name="comment" rows="10" cols="30" style="width: 178px; height: 39px;">
+               </textarea>
+             </div>
+               </br>
+               <div class="box_1">
+               <a href="login.php"><button type="submit" name="submit" id="button">Изпрати</button></a>
+             </div>
+            </fieldset>
+               </form>
+        <script src="" async defer></script>
+    </body>
+</html>
