@@ -186,7 +186,7 @@ button
     font-weight: 600;
     font-size: 1.5vw;
 }
-.incr{
+.decr,.incr{
     border-radius: 100%;
 }
 #button_cover_down{

@@ -30,67 +30,68 @@ function draw(timepass){
     bee.style.left = timepass / 5 + 'px';
 }*/
 var a = 0;
-const imga=document.querySelectorAll(".imeg");
+const imga = document.querySelectorAll(".imeg");
 imga.forEach(img => {
-    img.addEventListener("click",function click(){
-        switch(a)
-        {
+    img.addEventListener("click", function click() {
+        switch (a) {
             case 0:
-        img.style.transform="scale(1.5)";
-        a=1;
-        img.style.zIndex="3";
-        document.body.appendChild(clone);
-        break
-        case 1:
-            img.style.transform="scale(1)";
-            img.style.zIndex="1";
-            a=0
-            break
+                img.style.transform = "scale(1.5)";
+                a = 1;
+                img.style.zIndex = "3";
+                document.body.appendChild(clone);
+                break
+            case 1:
+                img.style.transform = "scale(1)";
+                img.style.zIndex = "1";
+                a = 0
+                break
         }
-    }
-        );
+    });
 })
-const plus=document.querySelectorAll("#plus");
-const minus = document.querySelectorAll("#minus");
-const count = document.querySelectorAll("#count")
-let bio=0;
-let aka=0;
-let peach=0;
-plus.forEach(pluses=>
-    {
-        count.forEach(numbers=>{
-            pluses.addEventListener("click",function oneup(){
-                if(but.getAttribute("name")=="bio"){
-                numbers.innerHTML=++bio;
-                }
-                if(but.getAttribute("name")=="peach"){
-                numbers.innerHTML=++aka;
-                }
-                if(but.getAttribute("name")=="aka"){
-                numbers.innerHTML=++peach;
+let bio = 0;
+let aka = 0;
+let peach = 0;
+const plus = document.getElementById("buy_windows")
+const buy_but = document.querySelectorAll("#button");
+buy_but.forEach(but => {
+    but.addEventListener("click", () => {
+        for (n = 1; n < 6; n += 2) {
+            for (y = 1; y < 6; y += 2) {
+                switch (plus.childNodes[n].childNodes[5].childNodes[y].attributes[1].value) {
+                    case "count":
+                        switch (n) {
+                            case 1:
+                                plus.childNodes[n].childNodes[5].childNodes[y].innerHTML = aka;
+                            case 3:
+                                plus.childNodes[n].childNodes[5].childNodes[y].innerHTML = bio;
+                            case 5:
+                                plus.childNodes[n].childNodes[5].childNodes[y].innerHTML = peach;
+                        }
+                        case "incr":
+                            switch (n) {
+                                case 1:
+                                    aka++;
+                                case 3:
+                                    bio++;
+                                case 5:
+                                    peach++;
+                            }
+                        case "decr":
+                                    switch (n) {
+                                        case 1:
+                                            aka--;
+                                        case 3:
+                                            bio--;
+                                        case 5:
+                                            peach--;
+                                    }
+                            
                 }
             }
-        )
-})
-    })
-let sub_a=false;
-let sub_b=false;
-let sub_p=false;
-const buy_but=document.querySelectorAll("#button");
-buy_but.forEach(but=>{
-    but.addEventListener("click",function clank(){
-        if(but.getAttribute("name")=="bio"){
-            sub_b=true;
-        }
-        if(but.getAttribute("name")=="peach"){
-            sub_p=true;
-        }
-        if(but.getAttribute("name")=="aka"){
-            sub_a=true;
         }
     })
 })
-const cart=document.getElementById("cart");
-cart.addEventListener("mouseenter",function hove(){
-    
+const cart = document.getElementById("cart");
+cart.addEventListener("mouseenter", function hove() {
+
 })
