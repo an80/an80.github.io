@@ -1,0 +1,29 @@
+h1,p,h2{
+    text-align: center;
+}
+body{
+    background: url("public/transparent-white-snowflake-21.png") repeat;
+    background-size: 0.1% 0.1%;
+}
+.center_div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.center{
+    align-self:center;
+    margin: 3em 0 5em 3.12em !important;
+}
+.offset-s0{
+    margin-left: 1% !important;
+}
+.name{
+    font-size: 5px;
+    position: fixed;
+    right:0px;
+    top: 0px;
+}
+.de{
+    height:1119px !important;
+}
